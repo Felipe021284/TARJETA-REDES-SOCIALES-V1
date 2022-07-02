@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <title>TARJETA REDES SOCIALES V1</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible"content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
 <style>
-    * {
+/*cuerpo*/
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,7 +28,7 @@ body {
     background: #efefef;
     flex-wrap: wrap;
 }
-
+/*contenedor principal*/
 .card {
     position: relative;
     width: 300px;
@@ -44,7 +48,7 @@ body {
     box-shadow: 0 5px 10px rgba(0,0,0,1);
     transform: translateY(-20px);
 }
-
+/*contenedor de imágen*/
 .card .head {
     height: 125px;
     width: 100%;
@@ -67,8 +71,12 @@ body {
     width: 150px;
     height: 150px;
     position: absolute;
-    background:black;
-    padding: 2px;
+
+    background-image: var(--gradiente);
+  
+    --gradiente: linear-gradient(to right,white,blue
+    );
+    padding: 3px;
     border-radius: 50%;
     bottom: -30%;
     left: 50%;
@@ -82,7 +90,20 @@ body {
     object-fit: cover;
 }
 
+Img:hover {
+    
+background-image: var(--gradiente);
+  
+    --gradiente: linear-gradient(to top,blue,white
+    );
+     box-shadow: 0 5px 10px rgba(0,0,0,1);
+    transform: translateY(-20px);
+}
 
+
+
+
+/*contenedor del texto*/
 .card .description {
     height: 200px;
     padding: 40px 20px 20px 20px;
@@ -90,13 +111,10 @@ body {
     text-align: center;
 }
 
-.card .description h3,h4,p{
-    background: linear-gradient(200deg,white 40%, blue 60%, white 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.card .description h2,h3,h4{ color:BLACK;
 }
 
-
+/*contenedor de redes sociales*/
 
 .card .contact {
     width: 100%;
@@ -104,27 +122,39 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size:40px;
+    
 }
+i{
+    color:black;
+    }
+
 
 .card .contact a {
     text-decoration: none;
     color: #fff;
   
-  background-image: var(--gradiente);
-  
-    --gradiente: linear-gradient(to top,blue,white
-    );
-    padding: 5px 20px;
-    border-radius: 5px;
-    transition: .3s;
+
+    padding: 5px 15px;
+    border-radius: 100%;
+    transition: .5s;  
 }
 
 .card .contact a:hover {
     
-    background:black;
-   
+background-image: var(--gradiente);
+  
+    --gradiente: linear-gradient(to top,blue,white
+    );
+     box-shadow: 0 5px 10px rgba(0,0,0,1);
+    transform: translateY(-20px);
 }
 
+
+
+
+
+    
 </style>
     </head>
     <body>
@@ -138,16 +168,32 @@ body {
             
         
         <div class="description">
-            <h3>TU NOMBRE</h3>
+            <h2 class="text-animation">TU NOMBRE</h2>
             <H4>TU PUESTO O TU NEGOCIO</H4>
-            <p>BREVE DESCRIPCIÓN DE LO QUE HACES</p>
+            <p>BREVE DESCRIPCIÓN DE LO QUE HACES <br />PRECIO $1100</p>
         </div>
         
-        <div class="contact">
+        <div class="contact"
+        >
+        <a href="tel: 3312381872"><i class="fa fa-phone"></i></a>
+
         <a href="https://wa.me/message/2HRXBKVKB7UGJ1
-        ">contactame</a>
-            
-        </div>
+        "><i class="fa fa-whatsapp"></i></a>
+        
+        <a href="https://www.facebook.com/Digital-World-100310082725612/
+        "><i class="fa fa-facebook"></i></a>
+        
+        <a href="mailto:felipemartinez84@live.com.mx?Subject=bienvenido
+        "><i class="fa fa-envelope-open
+        "></i></a>
+        
+<a href="https://maps.app.goo.gl/4um9YVqEmjJ7LZX8A
+"><i class="fa fa-street-view
+"></i></a>
+
+        
+        
+        
         
     </div>
         
